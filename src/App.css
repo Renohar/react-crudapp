@@ -1,0 +1,72 @@
+
+
+#root{
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100vh; 
+    background-color: #f5f1f1;
+}
+.App{
+    text-align: center;
+    width: 100%;
+}
+@media (max-width : 576px){
+    .App .table{
+        width: 100%;
+        overflow-x: scroll;
+        padding-bottom: 30px;
+    }
+}
+
+.create .field{
+    padding: 8px 0;
+}
+
+.create .field label{
+    padding-right: 10px;
+}
+
+.create .field input{
+    border : 1px solid #efefef;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.create .field input:focus-visible{
+    outline: none;
+}
+
+.create Button , .table > div > Button{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10px;
+    background-color: #5ec0e7;
+    font-size: 18px;
+    border-radius: 10px;
+    border : none;
+    cursor: pointer;
+}
+.table table thead
+{
+    background-color: #f39b6c;
+    padding: 10px;
+
+}
+
+.table table Button{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 8px;
+    background-color: #9c9e9f;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.table table th, .table table td{
+    padding: 10px;
+}
+.table table{
+    margin: auto;
+}
